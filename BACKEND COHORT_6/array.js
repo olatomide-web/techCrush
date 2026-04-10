@@ -1,7 +1,7 @@
 // let items = ["beans", "rice", "oil", 1, true]
 // console.log(items[2])
 // console.log(items.length)
-
+ 
 //forEach 
 
 // let fruits = ["watermelon", "apple", "orange", "banana"]
@@ -41,8 +41,42 @@
 // console.log(passed)
 
 
-let ages = [18, 25, 17, 43, 12]
-let adult = ages.filter(function(age){
-    return age >= 18
-})
-console.log(adult)
+// let ages = [18, 25, 17, 43, 12]
+// let adult = ages.filter(function(age){
+//     return age >= 18
+// })
+// console.log(adult)
+
+// const studentNames = ["tomide", "feyisara", "Christabel", "tomide", "moses"];
+// let found = studentNames.find(name => {
+//     return name === "Tomide".toLocaleLowerCase();
+// })
+// console.log(found)
+
+//reduce method
+// let cartPrices = [1500, 2000, 430, 2000]
+
+// let total = cartPrices.reduce(function(accumulator, currentPrice){
+//     return accumulator + currentPrice;
+// },0);//accumulator, current value, initial value
+
+// console.log(total);
+
+// //using arrow function
+// let grandTotal = cartPrices.reduce((acc,price) => {
+//     return acc + price;
+// },0);
+// console.log(grandTotal)
+
+//push, pop, shift, unshift
+let colors = ["red", "yellow", "blue"]
+colors.push("pink")//adds to the array
+console.log(colors)
+
+let lastColor = colors.pop()//removes the last item
+console.log(colors)
+
+let firstColor = colors.shift()//removes the first item
+console.log(colors)
+
+
