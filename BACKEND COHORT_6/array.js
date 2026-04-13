@@ -76,7 +76,7 @@ console.log(colors)
 let lastColor = colors.pop()//removes the last item
 console.log(colors)
 
-let firstColor = colors.shift()//removes the first item
+let firstColor = colors.unShift()//removes the first item
 console.log(colors)
 
 
