@@ -23,3 +23,17 @@
 //     console.log("an error occured " + error.message)
 // }
 
+function loadUserData(userId){
+    console.log("starting to load data...")
+    try{
+        if (!userId.startsWith("BAD")){
+            throw new Error("User Id must start with BAD");
+        }
+        console.log("Data loaded for user: " + userId);
+    } catch(error){
+        console.log("Failed " + error.message);
+    } finally{
+        console.log("Loading complete. CLosing connection ");
+    }
+};
+loadUserData();
